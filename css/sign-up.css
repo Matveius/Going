@@ -1,0 +1,294 @@
+:root {
+  --color-back-green: #004448;
+  --color-back-white: #FFFFFF;
+  --color-font-white: #fffef0;
+  --color-font-green: #004449;
+  --bright-green: #0bff80;
+  --salad: #d7ffc2;
+  --bright-blue: #483cff;
+  --peach: #fdd6ba;
+  --white: #ffffff;
+  --black: #000000;
+  --blue: #baebff;
+  --dark-red: #601124;
+}
+
+.darkmode {
+    --color-back-green: #00292b;
+    --color-back-white: #1f1f1f;
+    --color-font-white: #fffef0;
+    --color-font-green: #ffffff;
+    --bright-green: #098f4a;
+    --salad: #788d6c;
+    --bright-blue: #483cff;
+    --peach: #fdd6ba;
+    --white: #ffffff;
+    --black: #000000;
+    --blue: #538294;
+    --dark-red: #440d19;
+}
+
+main{
+    width: 100%;
+    background-color: var(--color-back-white);
+}
+
+.create-account {
+    font-family: "Roboto";
+    padding-top: 30px;
+    padding-bottom: 100px;
+    background-color: var(--color-bg);
+    color: var(--color-font-green);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 734px;
+    margin: auto;
+}
+
+.sign-up-container {
+    width: 549px;
+    margin: auto;
+    background: var(--color-back-white);
+    color: var(--color-font-green);
+    border-radius: 15px;
+    border: none;
+    background-color: var(--color-back-white);
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+a {
+    color: var(--color-font-green);
+    text-decoration: none;
+}
+
+#create-account {
+    margin: 0;
+    color: var(--color-font-green);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    background-color: var(--color-back-white);
+}
+
+label {
+    font-size: 16px;
+    color: var(--color-font-green);
+}
+
+input {
+    height: 36px;
+    align-self: stretch;
+    border-radius: 80px;
+    border: 1px solid var(--color-font-green);
+    background-color: var(--color-back-white); 
+    caret-color: var(--color-font-green);
+    color: var(--color-font-green);
+}
+
+.dob-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.dob-container select {
+    color: var(--color-font-green);
+    background-color: var(--color-back-white); 
+    height: 56px;
+    width: 167px;
+    padding: 8px;
+    border-radius: 40px;
+    border: 1px solid var(--color-font-green);
+}
+
+option {
+    color: var(--color-font-green);
+    background-color: var(--color-back-white); 
+    height: 36px;
+    padding: 10px;
+    border-radius: 40px;
+    border: 1px solid var(--color-font-green);
+}
+
+input[name="last_name"],
+input[name="first_name"],
+input[name="patronymic"],
+input[name="dob"],
+input[type="email"],
+input[type="tel"],
+input[type="confirm-password"] {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 40px;
+    border: 1px solid var(--color-font-green);
+}
+
+input[type="password"], 
+input[class="inputNickname"] {
+    width: 325px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 40px;
+    border: 1px solid var(--color-font-green);
+}
+
+.sign-up-submit {
+    width: 100%;    
+    height: 56px;
+    background: var(--color-font-green);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: 'Roboto';
+    display: flex;
+    padding: 14px 0px 15px 0px;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--color-back-white);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.login-btn {
+    width: 100%;    
+    height: 56px;
+    background: var(--color-back-green);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: 'Roboto';
+    display: flex;
+    padding: 14px 0px 15px 0px;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--color-font-white);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+input[type=checkbox] {
+    transform: scale(1.2);
+    height: auto;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.generate-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.generate-box button {
+    margin-top: 15px;
+    border: none;
+    border-radius: 25px;
+    height: 35px;
+    padding: 2px 15px;
+    width: auto;
+    color: var(--color-font-green);
+    background-color: transparent;
+    font-size: 14px;
+    font-family: 'Roboto';
+}
+
+.generate-box button:hover {
+    border: 2px solid var(--color-font-green);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.terms-of-use {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.terms-of-use p {
+    margin: 0;
+}
+
+span {
+    color: red;
+    font-family: 'Roboto';
+    font-size: 13px;
+}
+
+
+@media (max-width: 321px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="confirm-password"] {
+        width: 230px;
+    }
+
+    input[type="password"], 
+    input[id="nickname"] {
+        width: 230px;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border-radius: 40px;
+        border: 1px solid var(--color-font-green);
+    }
+
+    .create-account {
+        width: 100%;
+        padding: 42px 0 50px 0;
+    }
+    .sign-up-container {
+        width: 250px;
+        padding: 48px 30px;
+    }
+    .sign-up-container #create-account { 
+        font-size: 25px;
+    }
+    .generate-box {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .generate-btn {
+        margin-top: 5px;
+        width: 97px;
+        margin-bottom: 10px;
+    }
+
+    .dob-container {
+        flex-wrap: wrap;
+    }
+    .dob-container select {
+        width: 250px;
+    }
+}
