@@ -25,20 +25,19 @@ function showSlides() {
       dot.classList.add('active');
     }
   });
-
-//   slider.style.transform = `translateX(-${currentSlide * 100 / (slides.length - slidesToShow + 1)}%)`;
-//   slider.style.transform = `translateX(-30%)`;
-
 }
 
 function nextSlide() {
   currentSlide = (currentSlide + 1) % (slides.length - slidesToShow + 1);
   showSlides();
+  slider.style.transform = `translateX(-${currentSlide * 100 / (slides.length - slidesToShow + 1)}%)`;
 }
 
 function prevSlide() {
   currentSlide = (currentSlide - 1 + (slides.length - slidesToShow + 1)) % (slides.length - slidesToShow + 1);
   showSlides();
+  slider.style.transform = `translateX(-${currentSlide * 100 / (slides.length - slidesToShow + 1)}%)`;
+  
 }
 
 function dotClick(n) {
