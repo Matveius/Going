@@ -1277,7 +1277,7 @@ main {
   width: 100%;
   height: auto;
   padding: 112px 0;
-  background: var(--color-back-green);
+  background: var(--color-back-white);
 }
 .second-about .container {
   margin: auto;
